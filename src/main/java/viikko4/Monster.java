@@ -25,4 +25,7 @@ public class Monster implements Serializable{
     public String getType() {
         return type;
     }
+    public int getHealth() {
+        return health;
+    }
 }
