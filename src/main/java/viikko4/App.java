@@ -46,6 +46,15 @@ public class App
                         cave.monsters.remove(monsterIndex);
                     }
                     break;
+                case 4:
+                    System.out.println(" Anna tiedoston nimi, johon peli tallentaa: ");
+                    String filename = scanner.nextLine();
+                    cave.saveGame(filename);
+                    break;
+                case 5:
+                    System.out.println("Anna ladattavan tiedoston nimi: ");
+                    String saveName = scanner.nextLine();
+                    cave.loadGame(saveName);
                 case 0:
                     exit = true;
                     break;

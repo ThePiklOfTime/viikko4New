@@ -3,7 +3,7 @@ package viikko4;
 import java.io.Serializable;
 
 public class Player implements Serializable{
-    private String name;
+    public String name;
 
     public Player(String name) {
         this.name = name;
