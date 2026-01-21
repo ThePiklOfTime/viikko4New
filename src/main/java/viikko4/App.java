@@ -55,6 +55,7 @@ public class App
                     System.out.println("Anna tiedoston nimi, josta peli ladataan: ");
                     String saveName = scanner.nextLine();
                     cave.loadGame(saveName);
+                    break;
                 case 0:
                     exit = true;
                     break;
