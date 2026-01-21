@@ -15,7 +15,7 @@ public class Player implements Serializable{
         boolean isDead = monster.takeDamage(damage);
 
         if (isDead) {
-            System.out.println("Hirviö " + monster.getType() + " on kuollut!");
+            System.out.println(monster.getType() + " on kuollut!");
             return true;
         }
         System.out.println("Hirviöllä on " + monster.getHealth() + " elämää jäljellä.");
