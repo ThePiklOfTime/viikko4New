@@ -18,7 +18,7 @@ public class Player implements Serializable{
             System.out.println("Hirviö " + monster.getType() + " on kuollut!");
             return true;
         }
-        System.out.println("Hirviöllä on " + monster.getHealth() + " Elämää jäljellä.");
+        System.out.println("Hirviöllä on " + monster.getHealth() + " elämää jäljellä.");
 
         return false;
 

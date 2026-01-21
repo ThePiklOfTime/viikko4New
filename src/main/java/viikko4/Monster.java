@@ -16,7 +16,7 @@ public class Monster implements Serializable{
     }
     public boolean takeDamage(int damage) {
         this.health -= damage;
-        if (this.health < 0) {
+        if (this.health <= 0) {
             this.health = 0;
             return true;
         }
