@@ -1,6 +1,5 @@
 package viikko4;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -36,7 +35,12 @@ public class App
                     cave.listMonsters();
                     break;
                 case 3:
-                    
+                    System.out.println("Valitse hirviö, johon hyökätä: ");
+                    cave.listMonsters();
+                    int monsterIndex = Integer.parseInt(scanner.nextLine()) - 1;
+                    if (cave.player.attack(cave.monsters.get(monsterIndex))) {
+                        cave.monsters.remove(monsterIndex);
+                    }
                     break;
                 case 0:
                     exit = true;
@@ -50,7 +54,7 @@ public class App
                 }
         }
     }
-    System.out.println("Kiitos ohjelman käytöstä.");
+    System.out.println("Peli päättyy. Kiitos pelaamisesta!");
     scanner.close();
     }
 }

@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Cave implements Serializable{
-    private ArrayList<Monster> monsters;
-    private Player player;
+    public ArrayList<Monster> monsters;
+    public Player player;
     Cave(Player player) {
         this.monsters = new ArrayList<>();
         this.player = player;

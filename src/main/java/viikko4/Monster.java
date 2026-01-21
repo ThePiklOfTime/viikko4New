@@ -14,4 +14,15 @@ public class Monster implements Serializable{
     public void printInfo(int number) {
         System.out.println(number + ": " + type + " / " + health + "HP");
     }
+    public boolean takeDamage(int damage) {
+        this.health -= damage;
+        if (this.health < 0) {
+            this.health = 0;
+            return true;
+        }
+        return false;
+    }
+    public String getType() {
+        return type;
+    }
 }
