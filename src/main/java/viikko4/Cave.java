@@ -40,7 +40,7 @@ public class Cave implements Serializable{
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println("Peli tallennettiin tiedostoon " + filename);
+            System.out.println("Peli tallennettiin tiedostoon " + filename + ".");
        
         }
     public void loadGame(String filename) {
