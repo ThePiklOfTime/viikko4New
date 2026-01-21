@@ -16,7 +16,7 @@ public class App
         String playerName = scanner.nextLine();
         Player player = new Player(playerName);
         Cave cave = new Cave(player);
-
+        boolean exit = false;
         while (!exit) {
             System.out.println("1) Lisää luolaan hirviö \n2) Listaa hirviöt \n3) Hyökkää hirviöön \n4) Tallenna peli \n5) Lataa peli \n0) Lopeta ohjelma");
             
@@ -39,7 +39,7 @@ public class App
                     
                     break;
                 case 0:
-                    
+                    exit = true;
                     break;
                 
                 default:
