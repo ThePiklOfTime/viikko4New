@@ -52,7 +52,7 @@ public class App
                     cave.saveGame(filename);
                     break;
                 case 5:
-                    System.out.println("Anna ladattavan tiedoston nimi: ");
+                    System.out.println("Anna tiedoston nimi, josta peli ladataan: ");
                     String saveName = scanner.nextLine();
                     cave.loadGame(saveName);
                 case 0:

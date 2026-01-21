@@ -7,7 +7,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.io.FileNotFoundException;
 public class Cave implements Serializable{
     public ArrayList<Monster> monsters;
     public Player player;
@@ -59,7 +58,7 @@ public class Cave implements Serializable{
             e.printStackTrace();
         }
          
-        System.out.println("Peli ladattu tiedostosta " + filename + ". Tervetuloa takaisin, " + this.player.name);
+        System.out.println("Peli ladattu tiedostosta " + filename + ". Tervetuloa takaisin, " + this.player.name + ".") ;
     } 
 
 }
