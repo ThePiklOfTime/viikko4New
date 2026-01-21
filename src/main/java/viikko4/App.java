@@ -25,9 +25,9 @@ public class App
             
             switch (i) {
                 case 1:
-                    System.out.println("Syötä hirviön tyyppi: ");
+                    System.out.println("Anna hirviön tyyppi: ");
                     String type = scanner.nextLine();
-                    System.out.println("Syötä hirviön elämän määrä numerona: ");
+                    System.out.println("Anna hirviön elämän määrä numerona: ");
                     int health = Integer.parseInt(scanner.nextLine());
                     Monster monster = new Monster(type, health);
                     cave.addMonster(monster);
