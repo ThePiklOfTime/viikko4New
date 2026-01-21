@@ -1,8 +1,9 @@
 package viikko4;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cave {
+public class Cave implements Serializable{
     private ArrayList<Monster> monsters;
     private Player player;
     Cave(Player player) {
@@ -10,7 +11,16 @@ public class Cave {
         this.player = player;
     }
 
-    void addMonster(Monster monster) {
+    public void addMonster(Monster monster) {
         this.monsters.add(monster);
     }
+
+    public void listMonsters() {
+        int i = 1;
+        for (Monster monster : monsters) {
+            monster.printInfo(i);
+            i++;
+        }
+    }
+
 }
