@@ -32,10 +32,10 @@ public class App
                     cave.addMonster(monster);
                     break;
                 case 2:
-                    if (cave.monsters.isEmpty()) {
-                        cave.listMonsters();
-                    } else
-                    System.out.println("Luolan hirviöt:");
+                    if (!cave.monsters.isEmpty()) {
+                        System.out.println("Luolan hirviöt:");
+                        
+                    } 
                     cave.listMonsters();
                     break;
                 case 3:
